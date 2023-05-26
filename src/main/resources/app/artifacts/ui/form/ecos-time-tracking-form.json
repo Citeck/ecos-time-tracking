@@ -182,7 +182,7 @@
             "label": {
               "ru": "Status"
             },
-            "key": "status",
+            "key": "documentStatus",
             "refreshOn": [],
             "calculateValue": "value = _.get(data, \"parentInfo.status\")",
             "allowCalculateOverride": true,

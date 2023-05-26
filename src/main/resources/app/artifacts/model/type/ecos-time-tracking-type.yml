@@ -33,7 +33,7 @@ model:
         ru: Пользователь
         en: User
       type: PERSON
-    - id: status
+    - id: documentStatus
       name:
         ru: Статус документа
         en: Document status
