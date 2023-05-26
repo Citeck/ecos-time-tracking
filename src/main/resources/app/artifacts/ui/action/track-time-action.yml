@@ -1,0 +1,13 @@
+---
+id: track-time-action
+name:
+  ru: Записать время
+  en: Track time
+type: create
+config:
+  typeRef: emodel/type@ecos-time-tracking-type
+  formId: uiserv/form@ecos-time-tracking-form
+  attributes:
+    _parent: ${?id}
+    _parentAtt: timeTracking
+  redirectToPage: false

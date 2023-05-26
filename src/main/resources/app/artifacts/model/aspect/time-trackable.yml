@@ -1,0 +1,15 @@
+---
+id: time-trackable
+name:
+  ru: Учёт времени
+  en: Time trackable
+attributes:
+  - id: timeTracking
+    name:
+      en: Track time
+      ru: Запись времени
+    type: ASSOC
+    config:
+      typeRef: emodel/type@ecos-time-tracking-type
+      child: true
+    multiple: true
