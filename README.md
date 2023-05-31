@@ -2,11 +2,11 @@
 
 # `ecos-time-tracking`
 
-The `ecos-time-tracking` module provides a solution as an aspect to the data type for setting work logs.
+The ecos-time-tracking module provides a solution for setting work logs. Module is realized as an aspect to the data type.
 
 ## Get started
 
-If you are new to ECOS platform and would like to load the software locally, we recommend you download the Dockerized version from [Demo repository](https://github.com/Citeck/ecos-community-demo).
+If you are new to ECOS platform and would like to run the software locally, we recommend you download the Dockerized version from [Demo repository](https://github.com/Citeck/ecos-community-demo).
 
 ## Useful Links
 
