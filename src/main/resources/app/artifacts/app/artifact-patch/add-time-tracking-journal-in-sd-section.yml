@@ -1,0 +1,29 @@
+id: add-time-tracking-in-sd-section
+name: {ru: Добавить журнал "Учёт времени SD" раздел "Service Desk", en: Add journal "SD time tracking" in section "Service Desk" }
+
+target: 'ui/menu$default-menu-v1'
+
+type: json
+config:
+  operations:
+    - op: add
+      path: '$..[?(@.id == "service-desk-section")].items'
+      value: {
+        "id": "ebb92860-69d4-40f8-a0a8-afe892458802",
+        "label": {
+          "ru": "Учёт времени SD",
+          "en": "SD time tracking"
+        },
+        "icon": "",
+        "hidden": false,
+        "type": "JOURNAL",
+        "config": {
+          "recordRef": "uiserv/journal@ecos-sd-time-tracking-journal"
+        },
+        "action": {
+          "type": "",
+          "config": {}
+        },
+        "items": [],
+        "allowedFor": []
+      }
