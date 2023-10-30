@@ -55,3 +55,11 @@ model:
             var duration = value.load("duration");
             return duration/60000
         storingType: NONE
+    - id: jiraId
+      name:
+        ru: Jira ID
+        en: Jira ID
+    - id: email
+      name:
+        ru: Почта автора
+        en: Author email
