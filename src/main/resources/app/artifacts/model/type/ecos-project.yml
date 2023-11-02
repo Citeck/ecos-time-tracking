@@ -27,3 +27,11 @@ model:
       name:
         ru: Project Type Key
         en: Project Type Key
+    - id: client
+      name:
+        ru: Клиент
+        en: Client
+      type: ASSOC
+      config:
+        typeRef: emodel/type@clients-type
+        child: false
