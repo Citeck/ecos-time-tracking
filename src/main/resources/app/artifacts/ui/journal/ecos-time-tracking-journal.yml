@@ -66,10 +66,10 @@ columns:
       ru: Проект
       en: Project
     type: MLTEXT
-    attribute: _parent.project
+    attribute: _parent.assoc_src_issues
   - id: client
     name:
       ru: Клиент
       en: Client
     type: MLTEXT
-    attribute: _parent.project.client
+    attribute: _parent.assoc_src_issues.assoc_src_projects

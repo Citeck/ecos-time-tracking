@@ -5,8 +5,8 @@ name:
   en: Project
 storageType: ECOS_MODEL
 parentRef: emodel/type@data-list
-formRef: uiserv/form@DEFAULT_FORM
-journalRef: uiserv/journal@DEFAULT_JOURNAL
+formRef: uiserv/form@ecos-project-form
+journalRef: uiserv/journal@ecos-project-journal
 inheritForm: false
 defaultCreateVariant: true
 model:
@@ -27,11 +27,12 @@ model:
       name:
         ru: Project Type Key
         en: Project Type Key
-    - id: client
+    - id: issues
       name:
-        ru: Клиент
-        en: Client
+        ru: Задачи
+        en: Issues
       type: ASSOC
       config:
-        typeRef: emodel/type@clients-type
+        typeRef: emodel/type@jira-issue
         child: false
+      multiple: true

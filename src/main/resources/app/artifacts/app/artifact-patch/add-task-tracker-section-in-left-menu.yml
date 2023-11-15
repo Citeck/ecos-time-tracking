@@ -51,7 +51,7 @@ config:
             "hidden": false,
             "type": "JOURNAL",
             "config": {
-              "recordRef": "uiserv/journal@type$jira-issue",
+              "recordRef": "uiserv/journal@jira-issue-journal",
             },
             "action": {
               "type": "",
