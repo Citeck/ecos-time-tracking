@@ -45,8 +45,8 @@ columns:
     type: MLTEXT
   - id: type
     name:
-      ru: Тип
-      en: Type
+      ru: Тип тикета
+      en: Ticket type
     type: MLTEXT
     attribute: _parent.type
   - id: priority
