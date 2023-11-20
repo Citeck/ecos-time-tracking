@@ -8,7 +8,7 @@ parentRef: emodel/type@data-list
 formRef: uiserv/form@ecos-time-tracking-form
 journalRef: uiserv/journal@ecos-time-tracking-journal
 inheritForm: false
-defaultCreateVariant: true
+defaultCreateVariant: false
 model:
   attributes:
     - id: timeSpent
