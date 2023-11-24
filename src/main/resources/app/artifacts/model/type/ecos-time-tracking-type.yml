@@ -55,3 +55,7 @@ model:
             var duration = value.load("duration");
             return duration/60000
         storingType: NONE
+    - id: email
+      name:
+        ru: Почта автора
+        en: Author email

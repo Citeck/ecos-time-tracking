@@ -13,12 +13,6 @@ columns:
       ru: Пользователь
       en: User
     type: PERSON
-  - id: _parent
-    name:
-      ru: Документ
-      en: Document
-    type: MLTEXT
-    groupable: true
   - id: duration
     name:
       ru: Затраченное время, мин.
@@ -38,8 +32,44 @@ columns:
       ru: Дата начала
       en: Start date
     type: DATETIME
+  - id: _parent
+    name:
+      ru: Документ
+      en: Document
+    type: MLTEXT
+    groupable: true
   - id: documentStatus
     name:
       ru: Статус документа
       en: Document status
     type: MLTEXT
+  - id: type
+    name:
+      ru: Тип тикета
+      en: Ticket type
+    type: MLTEXT
+    attribute: _parent.type
+  - id: priority
+    name:
+      ru: Приоритет
+      en: Priority
+    type: MLTEXT
+    attribute: _parent.priority
+  - id: resolution
+    name:
+      ru: Решение
+      en: Resolution
+    type: MLTEXT
+    attribute: _parent.resolution
+  - id: project
+    name:
+      ru: Проект
+      en: Project
+    type: MLTEXT
+    attribute: _parent.assoc_src_issues
+  - id: client
+    name:
+      ru: Клиент
+      en: Client
+    type: MLTEXT
+    attribute: _parent.assoc_src_issues.assoc_src_projects

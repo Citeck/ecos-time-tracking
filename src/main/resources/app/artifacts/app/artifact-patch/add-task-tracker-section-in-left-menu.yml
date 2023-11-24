@@ -1,0 +1,65 @@
+id: add-task-tracker-section-in-left-menu
+name: {ru: Добавить раздел "Task Tracker", en: Add section "Task Tracker" }
+
+target: 'ui/menu$default-menu-v1'
+
+type: json
+config:
+  operations:
+    - op: add
+      path: '$..[?(@.id == "sections")].items'
+      value: {
+        "id": "task-tracker-section",
+        "label": {
+          "ru": "Task Tracker"
+        },
+        "icon": "ui/icon@icon-empty",
+        "hidden": false,
+        "type": "SECTION",
+        "config": {},
+        "action": {
+          "type": "",
+          "config": {}
+        },
+        "items": [
+          {
+            "id": "time-tracking-journal",
+            "label": {
+              "ru": "Учёт времени",
+              "en": "Time tracking"
+            },
+            "icon": "",
+            "hidden": false,
+            "type": "JOURNAL",
+            "config": {
+              "recordRef": "uiserv/journal@ecos-time-tracking-journal",
+            },
+            "action": {
+              "type": "",
+              "config": {}
+            },
+            "items": [],
+            "allowedFor": []
+          },
+          {
+            "id": "jira-issue-journal",
+            "label": {
+              "ru": "Jira Issue",
+              "en": "Jira Issue"
+            },
+            "icon": "",
+            "hidden": false,
+            "type": "JOURNAL",
+            "config": {
+              "recordRef": "uiserv/journal@jira-issue-journal",
+            },
+            "action": {
+              "type": "",
+              "config": { }
+            },
+            "items": [ ],
+            "allowedFor": [ ]
+          }
+        ],
+        "allowedFor": []
+      }
