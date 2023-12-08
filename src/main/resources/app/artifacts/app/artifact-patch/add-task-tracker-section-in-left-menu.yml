@@ -13,7 +13,7 @@ config:
         "label": {
           "ru": "Task Tracker"
         },
-        "icon": "ui/icon@icon-empty",
+        "icon": "ui/icon@i-leftmenu-personal-documents",
         "hidden": false,
         "type": "SECTION",
         "config": {},
