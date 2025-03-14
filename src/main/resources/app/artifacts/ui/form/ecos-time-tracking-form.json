@@ -88,23 +88,23 @@
             "components": [
               {
                 "label": {
-                  "ru": "timeLeft",
-                  "en": "timeLeft"
+                  "ru": "Оставшееся время (корректировка)",
+                  "en": "Time left (correction)"
                 },
                 "key": "timeLeft",
-                "inputMasks": [
-                  {
-                    "label": "",
-                    "mask": ""
-                  }
-                ],
+                "validate": {
+                  "custom": "const pattern = /^(?:(\\d+w)?\\s?)?(?:(\\d+d)?\\s?)?(?:(\\d+h)?\\s?)?(?:(\\d+m)?)?$/;\n\nvalid = pattern.test(input) ? true : \"Use format: 2w 4d 6h 45m\";"
+                },
                 "defaultValue": "",
-                "refreshOn": [
-                  "sla2Info"
-                ],
+                "refreshOn": [],
                 "optionalWhenDisabled": false,
                 "type": "textfield",
-                "input": true
+                "input": true,
+                "inputMasks": [
+                  {}
+                ],
+                "reorder": false,
+                "dataSrc": ""
               }
             ]
           }
@@ -269,6 +269,36 @@
             "label": "Column",
             "components": [
               {
+                "label": "Cancel",
+                "action": "event",
+                "state": "",
+                "showValidations": false,
+                "event": "cancel",
+                "block": true,
+                "type": "button",
+                "input": true,
+                "key": "submit2",
+                "conditional": {
+                  "show": null,
+                  "when": null
+                }
+              }
+            ],
+            "clearOnHide": true,
+            "conditional": {
+              "show": null,
+              "when": null
+            },
+            "index": 2
+          },
+          {
+            "md": 3,
+            "type": "column",
+            "input": false,
+            "key": "column",
+            "index": 3,
+            "components": [
+              {
                 "label": {
                   "en": "Save",
                   "ru": "Сохранить"
@@ -288,36 +318,6 @@
                 "optionalWhenDisabled": false,
                 "type": "button",
                 "input": true
-              }
-            ],
-            "clearOnHide": true,
-            "conditional": {
-              "show": null,
-              "when": null
-            },
-            "index": 2
-          },
-          {
-            "md": 3,
-            "type": "column",
-            "input": false,
-            "key": "column",
-            "index": 3,
-            "components": [
-              {
-                "label": "Cancel",
-                "action": "event",
-                "state": "",
-                "showValidations": false,
-                "event": "cancel",
-                "block": true,
-                "type": "button",
-                "input": true,
-                "key": "submit2",
-                "conditional": {
-                  "show": null,
-                  "when": null
-                }
               }
             ]
           }
