@@ -9,6 +9,7 @@ formRef: uiserv/form@ecos-time-tracking-form
 journalRef: uiserv/journal@ecos-time-tracking-journal
 inheritForm: false
 defaultCreateVariant: false
+workspaceScope: PRIVATE
 model:
   attributes:
     - id: timeSpent
