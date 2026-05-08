@@ -15,13 +15,11 @@ columns:
     type: PERSON
   - id: duration
     name:
-      ru: Затраченное время, мин.
-      en: Time spent, min.
+      ru: Затраченное время
+      en: Time spent
     type: NUMBER
     formatter:
-      type: script
-      config:
-        fn: return cell/60000
+      type: duration
   - id: workDescription
     name:
       ru: Описание работы
