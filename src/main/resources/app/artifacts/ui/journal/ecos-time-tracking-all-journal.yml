@@ -1,0 +1,85 @@
+---
+id: ecos-time-tracking-all-journal
+name:
+  ru: Учёт времени по всем рабочим пространствам
+  en: Time tracking in all workspaces
+typeRef: emodel/type@ecos-time-tracking-type
+actions:
+  - uiserv/action@view-dashboard
+editable: false
+columns:
+  - id: user
+    name:
+      ru: Пользователь
+      en: User
+    type: PERSON
+    groupable: true
+  - id: _workspace
+    name:
+      ru: Рабочее пространство
+      en: Workspace
+    type: ASSOC
+    sortable: false
+    groupable: false
+    editor:
+      type: journal
+      config:
+        journalId: user-workspaces
+  - id: duration
+    name:
+      ru: Затраченное время
+      en: Time spent
+    type: NUMBER
+    formatter:
+      type: duration
+  - id: workDescription
+    name:
+      ru: Описание работы
+      en: Work description
+    type: TEXT
+  - id: startDate
+    name:
+      ru: Дата начала
+      en: Start date
+    type: DATETIME
+  - id: _parent
+    name:
+      ru: Документ
+      en: Document
+    type: MLTEXT
+    groupable: true
+  - id: documentStatus
+    name:
+      ru: Статус документа
+      en: Document status
+    type: MLTEXT
+  - id: type
+    name:
+      ru: Тип тикета
+      en: Ticket type
+    type: MLTEXT
+    attribute: _parent.type
+  - id: priority
+    name:
+      ru: Приоритет
+      en: Priority
+    type: MLTEXT
+    attribute: _parent.priority
+  - id: resolution
+    name:
+      ru: Решение
+      en: Resolution
+    type: MLTEXT
+    attribute: _parent.resolution
+  - id: project
+    name:
+      ru: Проект
+      en: Project
+    type: MLTEXT
+    attribute: _parent.assoc_src_issues
+  - id: client
+    name:
+      ru: Клиент
+      en: Client
+    type: MLTEXT
+    attribute: _parent.assoc_src_issues.assoc_src_projects
