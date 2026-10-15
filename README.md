@@ -6,6 +6,10 @@
 
 The `Time tracking` module provides a solution for setting work logs. Module is realized as an aspect to the data type.
 
+## Cross-workspace journal
+
+The `ecos-time-tracking-all-journal` journal lists time entries across accessible workspaces. The Time spent column shows a total below the table for all matching entries, including entries on other pages. The total respects the journal filters and workspace scope.
+
 ## Get started
 
 If you are new to Citeck platform and would like to load the software locally, we recommend you download the Dockerized version from [Demo repository](https://github.com/Citeck/citeck-community).

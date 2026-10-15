@@ -30,6 +30,7 @@ columns:
       ru: Затраченное время
       en: Time spent
     type: NUMBER
+    hasTotalSumField: true
     formatter:
       type: duration
   - id: workDescription
