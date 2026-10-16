@@ -4,6 +4,10 @@ name:
   ru: Учёт времени по всем рабочим пространствам
   en: Time tracking in all workspaces
 typeRef: emodel/type@ecos-time-tracking-type
+defaultFilters:
+  - t: eq
+    att: startDate
+    val: '-P1M/$NOW'
 actions:
   - uiserv/action@view-dashboard
 editable: false

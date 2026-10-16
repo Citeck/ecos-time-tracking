@@ -10,6 +10,8 @@ The `Time tracking` module provides a solution for setting work logs. Module is 
 
 The `ecos-time-tracking-all-journal` journal lists time entries across accessible workspaces. The Time spent column shows a total below the table for all matching entries, including entries on other pages. The total respects the journal filters and workspace scope.
 
+By default, Start date is filtered from one month ago through the current time. This is a relative interval that advances with time. Users can change or remove the filter; saved journal settings retain their own filters. The ordinary time tracking journal is unchanged.
+
 ## Get started
 
 If you are new to Citeck platform and would like to load the software locally, we recommend you download the Dockerized version from [Demo repository](https://github.com/Citeck/citeck-community).
