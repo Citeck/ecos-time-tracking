@@ -37,6 +37,8 @@ columns:
     hasTotalSumField: true
     formatter:
       type: duration
+      config:
+        maxAsHours: true
   - id: workDescription
     name:
       ru: Описание работы
