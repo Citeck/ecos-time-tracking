@@ -8,7 +8,7 @@ The `Time tracking` module provides a solution for setting work logs. Module is 
 
 ## Cross-workspace journal
 
-The `ecos-time-tracking-all-journal` journal lists time entries across accessible workspaces. The Time spent column shows a total below the table for all matching entries, including entries on other pages. The total respects the journal filters and workspace scope.
+The `ecos-time-tracking-all-journal` journal lists time entries across accessible workspaces. The Time spent column shows a total below the table for all matching entries, including entries on other pages. The total respects the journal filters and workspace scope. Durations in rows and in the total are displayed in hours, minutes and seconds, without converting hours to days (for example, 25h instead of 1d 1h).
 
 By default, Start date is filtered from one month ago through the current time. This is a relative interval that advances with time. Users can change or remove the filter; saved journal settings retain their own filters. The ordinary time tracking journal is unchanged.
 
